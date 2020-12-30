@@ -1,6 +1,19 @@
-# Actions
+# TypeGraphql with TypeGoose
 > A NodeJS 14 Typescript express server.
 
+.env
+```
+NODE_ENV=development
+PORT=9098
+DB_URL=mongodb://localhost:27017/name
+```
+
+# Structure (layered structrue)
+- Resolvers are for resolving the graphql schema. (UI)
+- Services are logical services (Service)
+- Either DB and Graphql Schema/models can be d in src/models. This is the source of truth (Data)
+
+## Actions
 Deploy contains 2 jobs 
 - Push
 - Deploy
