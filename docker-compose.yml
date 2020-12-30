@@ -1,0 +1,7 @@
+version: "3"
+services:
+    apikeycapsets:
+        env_file: .env
+        image: noudadrichem/docker-express:latest
+        ports:
+            - "9098:9098"
