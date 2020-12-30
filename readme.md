@@ -8,10 +8,15 @@ PORT=9098
 DB_URL=mongodb://localhost:27017/name
 ```
 
+
 # Structure (layered structrue)
 - Resolvers are for resolving the graphql schema. (UI)
 - Services are logical services (Service)
 - Either DB and Graphql Schema/models can be d in src/models. This is the source of truth (Data)
+
+
+## Simple local database via docker
+`docker run -d -p 27017:27017 mongo` 
 
 ## Actions
 Deploy contains 2 jobs 
