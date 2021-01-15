@@ -6,6 +6,7 @@ import { buildSchema } from 'type-graphql'
 
 import { graphqlUploadExpress } from 'graphql-upload';
 import { mongoose } from '@typegoose/typegoose';
+import { logger } from './utils/logger';
 
 export default async function server() {
   const app = express()
@@ -33,7 +34,7 @@ export default async function server() {
   server.applyMiddleware({ app, path: "/graphql" });
 
   app.get('/', (_, res) => {
-    console.log('GET / ')
+    logger.info('GET / ')
     res.status(200).json({
       message: 'Hello TypeGraphql'
     })

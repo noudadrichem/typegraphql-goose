@@ -7,6 +7,9 @@
     "emitDecoratorMetadata": true,
     "esModuleInterop": true,
     "outDir": "./public",
-    "rootDir": "./src"
-  }
+    "baseUrl": ".",
+    "removeComments": true,
+  },
+  "include": ["src", "test"],
+  "exclude": ["node_modules"]
 }

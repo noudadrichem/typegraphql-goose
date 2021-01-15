@@ -2,7 +2,6 @@ import { Query, Arg, Args, Mutation, Authorized, Ctx, Resolver, Field, InputType
 import Recipe from "../models/Recipe";
 import * as RecipeService from '../services/recipe.service';
 
-/** INPUT TYPES... */
 @InputType()
 class AddRecipeInput {
     @Field()
